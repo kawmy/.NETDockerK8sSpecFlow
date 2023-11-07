@@ -1,0 +1,53 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kamyark8s-app-deployment
+  annotations:
+    kubernetes.io/change-cause: "Updating from v1 to v2"
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: kamyark8s-app
+      version: v01
+  template:
+    metadata:
+      name: mykamyark8s
+      labels:
+        app: kamyark8s-app
+        version: v01
+        env: prod
+        app.kubernetes.io/name: kamyark8s-app
+    spec:
+      containers:
+      - name: kamyark8s-app
+        image: kawmy/kamyark8s:v2
+        ports:
+        - name: http-web-api
+          containerPort: 80
+        resources:
+          requests:
+            cpu: 100m
+            memory: 100Mi
+          limits:
+            cpu: 200m
+            memory: 200Mi
+        env:
+        - name: ASPNETCORE_URLS
+          value: http://+:80
+
+
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: my-lb-service
+spec:
+  selector:
+    app.kubernetes.io/name: kamyark8s-app
+  ports:
+  - name: kamyark8s-app-port
+    protocol: TCP
+    port: 9090
+    targetPort: 80
+  type: LoadBalancer

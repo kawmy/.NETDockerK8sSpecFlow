@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "kubernetesTest", "kubernetesTest.csproj", "{6620D603-B170-4E0F-A2B9-72C799C35ADE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kubernetestest.test", "..\Kubernetestest.test\Kubernetestest.test.csproj", "{7F931ED5-E9C0-49DE-ADDA-713DF98D15A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6620D603-B170-4E0F-A2B9-72C799C35ADE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6620D603-B170-4E0F-A2B9-72C799C35ADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6620D603-B170-4E0F-A2B9-72C799C35ADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6620D603-B170-4E0F-A2B9-72C799C35ADE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F931ED5-E9C0-49DE-ADDA-713DF98D15A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F931ED5-E9C0-49DE-ADDA-713DF98D15A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F931ED5-E9C0-49DE-ADDA-713DF98D15A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F931ED5-E9C0-49DE-ADDA-713DF98D15A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98EE79DE-2A85-42D2-A533-670586607C4D}
+	EndGlobalSection
+EndGlobal

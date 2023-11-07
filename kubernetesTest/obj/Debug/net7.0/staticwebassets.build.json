@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Ms6mo0OH9NNy6JERX+ahJ+X9Giexc7zMie+xhaXcx7U=",
+  "Source": "kubernetesTest",
+  "BasePath": "_content/kubernetesTest",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
